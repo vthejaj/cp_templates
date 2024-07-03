@@ -1,0 +1,27 @@
+create in.txt and out.txt files in the same folder
+
+for linux/mac:
+c++:
+compile (mac): clang++ -std=c++20 <filename>.cpp
+compile (linux): g++ -std=c++20 <filename>.cpp
+run (linux/mac): ./a.out < in.txt > out.txt
+
+python:
+python <filename>.py < in.txt > out.txt
+
+java:
+java <filename>.java < in.txt > out.txt
+
+for windows:
+c++:
+compile: g++ -std=c++20 <filename>.cpp
+run (in cmd): ./a.out < in.txt > out.txt
+run (in ps): Get-Content in.txt | ./a.out > out.txt
+
+python:
+Interpret (in cmd): python <filename>.py < in.txt > out.txt 
+Interpret (ps): Get-Content in.txt | python <filename>.py > out.txt
+
+java:
+compile and run (in cmd): java <filename>.java < in.txt > out.txt 
+compile and run (in ps): Get-Content in.txt | java <filename>.java > out.txt
